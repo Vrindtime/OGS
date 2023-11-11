@@ -1,0 +1,32 @@
+$email=$_REQUEST["mail"];
+	$password=$_REQUEST["pass"];
+	$user=$_REQUEST["acc"];
+	
+	$sql_email=mysql_query("Select mail from Login");
+	while($query=mysql_fetch_array($sql_email))
+	{
+		if($email == $query[0]){
+			$con1 = true;
+		}
+		else{
+			echo"Entered Email is inncorrect";
+		}
+	}
+	
+	$sql_pass=mysql_query("Select mail from Login");
+	while($query=mysql_fetch_array($sql_pass))
+	{
+		if($pass == $query[0]){
+			$con2 = true;
+		}
+		else{
+			echo"Entered Password is inncorrect";
+		}
+	}
+	$con1 = $con2 = 0;
+	if($con1==true && $con2==true ){
+		header('Location: status.html');
+	}
+	else{
+		echo"Error";
+	}
