@@ -12,7 +12,7 @@
 			<div class="account">
 				<div class="acc">
 					<div class=img>
-						<img src="./user_pfp.png" alt="pfp">
+						<img src="./userpng.png" width="35px" height="35px" alt="pfp">
 					</div>
 					<h3>User</h3>
 					<input type="radio" name="acc" value="user">
@@ -20,7 +20,7 @@
 				
 				<div class="acc">
 					<div class=img>
-						<img src=./user_pfp.png" alt="pfp">
+						<img src="./userpng.png" width="35px" height="35px" alt="pfp">
 					</div>
 					<h3>Admin</h3>
 					<input type="radio" name="acc" value="admin">

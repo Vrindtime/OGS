@@ -2,6 +2,8 @@
 	<head>
 		<title>SignUp</title>
 		<link rel="stylesheet" type="text/css" href="./style.css">
+		<script src="./script.js" defer></script>
+
 	</head>
 	
 	<body style="height: 100vh;">
@@ -12,7 +14,7 @@
 				<div class="account">
 					<div class="acc">
 						<div class=img>
-							<img src=./user_pfp.png" alt="pfp">
+							<img src="./userpng.png" width="35px" height="35px" alt="pfp">
 						</div>
 						<h3>User</h3>
 						<input type="radio" name="acc" value="user">
@@ -20,7 +22,7 @@
 				
 					<div class="acc">
 						<div class=img>
-							<img src=./user_pfp.png" alt="pfp">
+							<img src="./userpng.png" width="35px" height="35px" alt="pfp">
 						</div>
 						<h3>Admin</h3>
 						<input type="radio" name="acc" value="admin">
@@ -33,13 +35,13 @@
 				
 					<div class="form">
 						<label for="name">Name:</label>
-							<input type="text" id="name" name="name" placeholder="Enter your Name here" required>
+							<input type="text" id="name" name="name" placeholder="Enter your Name here" required onChange="validateText(this.value)">
 							
 						<label for="mail">Email:</label>
-							<input type="email" id="mail" name="mail" placeholder="Enter your Email here" required>
+							<input type="email" id="mail" name="mail" placeholder="Enter your Email here" required onChange="validateEmail(this.value)">
 							
 						<label for="pass">Password:</label>
-							<input type="password" id="pass" name="pass" placeholder="Enter your Password here" required>
+							<input type="password" id="pass" name="pass" placeholder="Enter your Password here" required onChange="validatePassword(this.value)">
 							
 						<div class="sub">
 							<p>Have an Account? <a href=./login.php>Login In</a></p>

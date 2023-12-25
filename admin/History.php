@@ -1,6 +1,6 @@
 <?php
 	include("../conndb.php");
-//	include("../error_handler.php");
+	include("../error_handler.php");
 ?>
 
 <html>
@@ -92,7 +92,7 @@
 					<h2>Ticket: <?php echo $ticket['t_subject']?></h2>
 				</div>
 				
-				<div class="view ">
+				<div class="view">
 					<a  class="btnhov" href=<?php echo "./TicketReview.php?id=$id"?>>View</a>
 				</div>
 				

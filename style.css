@@ -126,7 +126,9 @@ h2{
 					0 0 8px #e8b6ff,
 					0 0 10px #e8b6ff;
 }
-
+a:hover,.view:hover,.Update:hover{
+	transform: scale(1.1);
+}
 @keyframes x{
 	from{
 		opacity: 0;
